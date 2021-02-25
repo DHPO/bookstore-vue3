@@ -2,7 +2,7 @@
 <div id="avatar">
   <span>Hi, {{auth.username}}</span>
   <el-dropdown>
-    <el-avatar :src="thunderboy"> </el-avatar>
+    <a href="#"><el-avatar :src="thunderboy"> </el-avatar></a>
     <template #dropdown>
       <el-dropdown-menu>
         <el-dropdown-item>
@@ -23,7 +23,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent } from "vue";
 import { useLogin } from "../service/login"
 import thunderboy from "../assets/thunderboy.jpg"

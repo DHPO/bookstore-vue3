@@ -31,17 +31,18 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { ElMessage } from "element-plus";
 import { computed, defineComponent, reactive, ref } from "vue";
 import { useRoute } from "vue-router"
 import * as service from "../service/book"
+import { IBook } from "../typings/book";
 
 export default defineComponent({
   setup() {
     const route = useRoute()
-    const bookId = route.params.id
-    const book = reactive({})
+    const bookId = parseInt(<string>route.params.id)
+    const book = reactive(<IBook>{})
     const loaded = ref(false)
     const state = computed(() => {
       if (book.inventory > 0) {

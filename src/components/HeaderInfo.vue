@@ -2,10 +2,10 @@
   <el-row>
     <el-col :span="12">
       <a id="logo" href="/">
-        <img alt="logo" className="logo" :src="logo" style="height: 45px" />
+        <img alt="logo" class="logo" :src="logo" style="height: 45px" />
         <img
           alt="Book Store"
-          className="logo-font"
+          class="logo-font"
           :src="logoFont"
           style="height: 40px"
         />
@@ -17,7 +17,7 @@
   </el-row>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent } from "vue";
 import UserAvatar from "./UserAvatar.vue";
 import logo from "../assets/logo.svg";

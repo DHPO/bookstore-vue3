@@ -6,7 +6,7 @@
     </el-carousel>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent } from "vue";
 import book1 from "../assets/carousel/book1.jpg"
 import book2 from "../assets/carousel/book2.jpg"

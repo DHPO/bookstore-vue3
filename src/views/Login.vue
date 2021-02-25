@@ -1,9 +1,9 @@
 <template>
-  <div className="login-page">
-    <div className="login-container">
-      <div className="login-box">
-        <h1 className="page-title">Login</h1>
-        <div className="login-content">
+  <div class="login-page">
+    <div class="login-container">
+      <div class="login-box">
+        <h1 class="page-title">Login</h1>
+        <div class="login-content">
           <login-form />
         </div>
       </div>

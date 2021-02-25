@@ -16,7 +16,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent } from "vue";
 import { useAuthRequire } from "../service/login";
 import SideBar from "../components/SideBar.vue"

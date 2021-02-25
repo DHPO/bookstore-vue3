@@ -18,7 +18,7 @@
   </el-form>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent, reactive, ref } from "vue";
 import { useLogin } from "../service/login"
 
